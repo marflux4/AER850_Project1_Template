@@ -1,3 +1,9 @@
+# Martin Poovathingal
+# 500944355
+# AER850 Introduction to Machine Learning
+# Project 1
+# Oct 15, 2023
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -162,5 +168,7 @@ loaded_model = joblib.load('best_svm_model.joblib')
 coordinates = [[9.375, 3.0625, 1.51], [6.995, 5.125, 0.3875], [0, 3.0625, 1.93], [9.4, 3, 1.8], [9.4, 3, 1.3]]
 
 predictions = loaded_model.predict(coordinates)
+
+print(predictions)
 
 # The 'predictions' variable now contains the predicted maintenance steps for the given coordinates
